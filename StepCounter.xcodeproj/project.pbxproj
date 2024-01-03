@@ -11,6 +11,12 @@
 		0710326C2B45D2D8009DF7DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0710326B2B45D2D8009DF7DF /* ContentView.swift */; };
 		0710326E2B45D2D9009DF7DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0710326D2B45D2D9009DF7DF /* Assets.xcassets */; };
 		071032712B45D2D9009DF7DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 071032702B45D2D9009DF7DF /* Preview Assets.xcassets */; };
+		071032792B45D2F8009DF7DF /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071032782B45D2F8009DF7DF /* ProgressView.swift */; };
+		0710327B2B45DA70009DF7DF /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0710327A2B45DA70009DF7DF /* ActivityView.swift */; };
+		0710327D2B45E664009DF7DF /* ContentActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0710327C2B45E664009DF7DF /* ContentActivityView.swift */; };
+		0710327F2B45E701009DF7DF /* StepCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0710327E2B45E701009DF7DF /* StepCounterView.swift */; };
+		071032872B45EE57009DF7DF /* StepCounterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071032862B45EE57009DF7DF /* StepCounterManager.swift */; };
+		071032892B45FE88009DF7DF /* StepTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071032882B45FE88009DF7DF /* StepTimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,13 @@
 		0710326B2B45D2D8009DF7DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0710326D2B45D2D9009DF7DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		071032702B45D2D9009DF7DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		071032782B45D2F8009DF7DF /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		0710327A2B45DA70009DF7DF /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		0710327C2B45E664009DF7DF /* ContentActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentActivityView.swift; sourceTree = "<group>"; };
+		0710327E2B45E701009DF7DF /* StepCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCounterView.swift; sourceTree = "<group>"; };
+		071032842B45EDBD009DF7DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		071032862B45EE57009DF7DF /* StepCounterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCounterManager.swift; sourceTree = "<group>"; };
+		071032882B45FE88009DF7DF /* StepTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +64,9 @@
 		071032682B45D2D8009DF7DF /* StepCounter */ = {
 			isa = PBXGroup;
 			children = (
+				071032852B45EE47009DF7DF /* Hardware */,
+				071032842B45EDBD009DF7DF /* Info.plist */,
+				071032772B45D2E6009DF7DF /* Views */,
 				071032692B45D2D8009DF7DF /* StepCounterApp.swift */,
 				0710326B2B45D2D8009DF7DF /* ContentView.swift */,
 				0710326D2B45D2D9009DF7DF /* Assets.xcassets */,
@@ -65,6 +81,26 @@
 				071032702B45D2D9009DF7DF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		071032772B45D2E6009DF7DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				071032782B45D2F8009DF7DF /* ProgressView.swift */,
+				0710327A2B45DA70009DF7DF /* ActivityView.swift */,
+				0710327C2B45E664009DF7DF /* ContentActivityView.swift */,
+				0710327E2B45E701009DF7DF /* StepCounterView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		071032852B45EE47009DF7DF /* Hardware */ = {
+			isa = PBXGroup;
+			children = (
+				071032862B45EE57009DF7DF /* StepCounterManager.swift */,
+				071032882B45FE88009DF7DF /* StepTimer.swift */,
+			);
+			path = Hardware;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +174,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0710326C2B45D2D8009DF7DF /* ContentView.swift in Sources */,
+				0710327B2B45DA70009DF7DF /* ActivityView.swift in Sources */,
 				0710326A2B45D2D8009DF7DF /* StepCounterApp.swift in Sources */,
+				0710327F2B45E701009DF7DF /* StepCounterView.swift in Sources */,
+				071032872B45EE57009DF7DF /* StepCounterManager.swift in Sources */,
+				071032792B45D2F8009DF7DF /* ProgressView.swift in Sources */,
+				0710327D2B45E664009DF7DF /* ContentActivityView.swift in Sources */,
+				071032892B45FE88009DF7DF /* StepTimer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,8 +314,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StepCounter/Preview Content\"";
+				DEVELOPMENT_TEAM = SMKF8264RS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StepCounter/Info.plist;
+				INFOPLIST_KEY_NSMotionUsageDescription = "We need your step";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -300,8 +345,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StepCounter/Preview Content\"";
+				DEVELOPMENT_TEAM = SMKF8264RS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StepCounter/Info.plist;
+				INFOPLIST_KEY_NSMotionUsageDescription = "We need your step";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

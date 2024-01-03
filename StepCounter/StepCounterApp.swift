@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct StepCounterApp: App {
+    private let stepManager: StepCounterManager = StepCounterManager()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
-        }
+        }.environment(stepManager)
     }
 }
